@@ -1,2 +1,2 @@
 # Vagrant
-Vagrantfile
+Contoh vagrantfile untuk dipakai
