@@ -5,6 +5,7 @@ Vagrant.configure("2") do |config|
     lb.vm.box = "ubuntu/xenial64"
     lb.vm.network "private_network", ip: "192.168.33.8"
     lb.vm.provision "shell", path: "install_lb.sh"
+    lb.disksize.size = '10GB'
     lb.vm.provider "virtualbox" do |v|
         v.memory = 2024
         v.cpus = 2
